@@ -1,0 +1,12 @@
+/* Add the following CSS to the file. 
+    I would like the class to fill the whole screen
+    with a radial gradient background.
+*/
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(circle, #be4bdb 5%, #9775fa 95%);
+}

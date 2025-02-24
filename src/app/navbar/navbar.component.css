@@ -1,0 +1,18 @@
+.navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 40px;
+  align-items: center;
+  height: 40px;
+  background-color: #b670e8;
+  position: fixed;
+  padding-left: 8px;
+  padding-right: 16px;
+}
+
+.navbar-text {
+  color: rgb(2, 26, 30);
+  font-size: 20px;
+  font-weight: bold;
+}
