@@ -2,4 +2,7 @@
 <div class="home-container">
   <p>{{ title }}</p>
   <p>{{ subtitle }}</p>
+  <div *ngIf="recipies">
+    <app-recipie [title]="recipies.recipes[0].title"></app-recipie>
+  </div>
 </div>
