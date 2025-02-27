@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from '../environments/environment.prod'; // Import environment
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +11,7 @@ export class RecipeService {
 
   private httpOptions = {
     headers: new HttpHeaders({
-      'x-rapidapi-key': 'c70b672410msh4c10651c3c3fcb3p15b0a1jsna9ed39756583',
+      'x-rapidapi-key': environment.apiKey,
       'x-rapidapi-host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com',
     }),
   };

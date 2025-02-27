@@ -3,6 +3,10 @@
   <p>{{ title }}</p>
   <p>{{ subtitle }}</p>
   <div *ngIf="recipies">
-    <app-recipie [title]="recipies.recipes[0].title"></app-recipie>
+    <app-recipie
+      *ngIf="recipies.recipes[0].extendedIngredients"
+      [title]="recipies.recipes[0].title"
+      [ingredients]="recipies.recipes[0].extendedIngredients"
+    ></app-recipie>
   </div>
 </div>
