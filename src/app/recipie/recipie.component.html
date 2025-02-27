@@ -1,9 +1,16 @@
 <div class="recipie-container">
   <p class="initial-title">{{ title }}</p>
   <div class="ingredients">
+    <input
+      type="text"
+      [(ngModel)]="searchText"
+      placeholder="Search Ingredients..."
+    />
     <p class="ingredients-title">Ingredients:</p>
     <ul>
-      <li *ngFor="let ingredient of ingredients">{{ ingredient.name }}</li>
+      <li *ngFor="let ingredient of ingredients | filter : searchText">
+        {{ ingredient.name }}
+      </li>
     </ul>
   </div>
 </div>
