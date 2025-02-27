@@ -1,3 +1,9 @@
 <div class="recipie-container">
   <p class="initial-title">{{ title }}</p>
+  <div class="ingredients">
+    <p class="ingredients-title">Ingredients:</p>
+    <ul>
+      <li *ngFor="let ingredient of ingredients">{{ ingredient.name }}</li>
+    </ul>
+  </div>
 </div>
